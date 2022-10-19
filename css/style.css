@@ -30,6 +30,10 @@ h1,h2,h3,h4,h5,h6 { line-height: 1; } /*font-size높이와 동일*/
 
 #logo { float: left; }
 
+#logo h1 a img {
+  height: 46px;
+}
+
 #header .inner { float: right; }
 
 #header .inner #gnb, #header .inner #login-menu { float: left; }
