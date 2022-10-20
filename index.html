@@ -7,171 +7,459 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/initial.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
   </head>
   <body>
-    <div id="header-wrap">
-      <header id="header">
-        <div id="logo">
-          <h1>
-            <a href="index.html"><img src="./img/logo.svg" alt="cloudiumbox"></a>
-          </h1>
-        </div>
-        <div class="inner">
-          <ul id="gnb">
-            <li><a href="#first">시작하기</a></li>
-            <li><a href="#second">상품보기</a></li>
-            <li><a href="#third">와이즐리 이야기</a></li>
-            <li><a href="#fourth">고객센터</a></li>
-          </ul>
-          <ul id="login-menu">
-            <!-- <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li> -->
-            <li><a href="#">로그아웃</a></li>
-            <li><a href="#" class="cart">장바구니<span class="count">0</span></a></li>
-          </ul>
-        </div>
-      </header>
-    </div>
-    <div id="mainbanner">
-      <div class="inner">
-        <div class="maintext">
-          <p class="maintitle">
-            정직한 가격의<br>
-            <strong>프리미엄 면도용품 구독 서비스</strong>
-          </p>
-          <p class="subtitle">독일산 5중날8,900원, 첫 가입시 면도기를 드려요</p>
-          <a href="#" class="common-btn">더 알아보기</a>
-        </div>
-      </div>
-    </div>
-    <div id="container">
-      <!-- 첫번째 섹션 -->
-      <section id="first">
-        <div class="inner">
-          <ul class="box-wrap">
-            <li>
-              <div class="items">
-                <h3>채용정보</h3>
-                <p>21세기 선두육상여객 운송<br>금호고속 인재모집</p>
-                <div class="img">
-                  <img src="./img/section_1/section_icon1.png" alt="채용정보">
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="items">
-                <h3>채용정보</h3>
-                <p>21세기 선두육상여객 운송<br>금호고속 인재모집</p>
-                <div class="img">
-                  <img src="./img/section_1/section_icon2.png" alt="채용정보">
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="items">
-                <h3>채용정보</h3>
-                <p>21세기 선두육상여객 운송<br>금호고속 인재모집</p>
-                <div class="img">
-                  <img src="./img/section_1/section_icon3.png" alt="채용정보">
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="items">
-                <h3>채용정보</h3>
-                <p>21세기 선두육상여객 운송<br>금호고속 인재모집</p>
-                <div class="img">
-                  <img src="./img/section_1/section_icon4.png" alt="채용정보">
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- 두번째 섹션 -->
-      <section id="second">
-        <div class="inner">
-          <h2>다양한 기초자산</h2>
-          <div class="subtitle">KOSPI200지수,KOSDAQ150지수 및 55개의 구성종목에<br>투자할 수 있습니다.</div>
-          <div class="thumb-img-wrap">
-            <ul>
-              <li><img src="./img/section_2/img01.png" alt="img01"></li>
-              <li><img src="./img/section_2/img02.png" alt="img02"></li>
-              <li><img src="./img/section_2/img03.png" alt="img03"></li>
-              <li><img src="./img/section_2/img04.png" alt="img04"></li>
-              <li><img src="./img/section_2/img05.png" alt="img05"></li>
-              <li><img src="./img/section_2/img06.png" alt="img06"></li>
+    <div id="wrap">
+      <div id="header-wrap">
+        <header id="header">
+          <div id="logo">
+            <h1>
+              <a href="index.html"><img src="./img/logo.svg" alt="cloudiumbox"></a>
+            </h1>
+          </div>
+          <div class="inner">
+            <ul id="gnb">
+              <li><a href="#first">서비스소개<img src="./img/arrow_down.png"></a></li>
+              <li><a href="#second">주요기능<img src="./img/arrow_down.png"></a></li>
+              <li><a href="#third">요금</a></li>
+              <li><a href="#fourth">비교</a></li>
+              <li><a href="#fifth">지원<img src="./img/arrow_down.png"></a></li>
             </ul>
-            <ul>
-              <li><img src="./img/section_2/img07.png" alt="img07"></li>
-              <li><img src="./img/section_2/img08.png" alt="img08"></li>
-              <li><img src="./img/section_2/img09.png" alt="img09"></li>
-              <li><img src="./img/section_2/img10.png" alt="img10"></li>
-              <li><img src="./img/section_2/img11.png" alt="img11"></li>
-              <li><img src="./img/section_2/img12.png" alt="img12"></li>
+            <ul id="login-menu">
+              <li><a href="#" class="common-btn login">로그인</a></li>
+              <li><a href="#" class="common-btn free">무료로 시작하기</a></li>
             </ul>
           </div>
-        </div>
-      </section>
-      <!-- 세번째 섹션 -->
-      <section id="third">
-        <div class="inner">
-          <div class="box img"></div>
-          <div class="box">
-            <div class="text-box">
-              <h2>상승일 때도, 하락일 때도<br>모두 수익!</h2>
-              <div class="subtitle">상승을 예상할 때는 콜ELW,<br>하락을 예상할 때는 풋ELW와 함께하세요.</div>
-              <a href="#" class="common-btn">ELW 장점</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 네번째 섹션 -->
-      <section id="fourth">
-        <div class="inner">
-          <div class="box">
-            <div class="text-box">
-              <h2>새로운 면도경험을<br>선물하세요</h2>
-              <div class="subtitle">건강한 면도 습관을 선물하세요.<br>3단계프리미엄</div>
-              <a href="#" class="common-btn">더 알아보기</a>
-            </div>
-          </div>
-          <div class="box img"></div>
-        </div>
-      </section>
-      <!-- 다섯번째 섹션 -->
-      <section>
-        <div class="inner">
-          <div class="box img"></div>
-          <div class="box">
-            <div class="text-box">
-              <h2>부담없이 시작하세요<br>클럽 구독 시 면도기 무료</h2>
-              <a href="#" class="common-btn">시작하기</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <footer id="footer">
-      <div class="inner">
-        <div class="f-box logo">
-          <a href="#"><img src="./img/footer_logo.png" alt="로고"></a>
-        </div>
-        <div class="f-box">
-          <ul>
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">이용약관 및 고객유의사항</a></li>
-          </ul>
-          <div class="tel">고객센터&nbsp;1544-5000</div>
-          <div class="copyright">copyright&nbsp;2022&nbsp;korea&nbsp;investment&nbsp;&&nbsp;securities&nbsp;co.&nbsp;ltd<br>all right reserved</div>
-        </div>
-        <select name="familysite" id="familysite">
-          <option value="default" selected disabled hidden>family site</option>
-          <option value="daum">daum</option>
-          <option value="naver">naver</option>
-          <option value="kakao">kakao</option>
-        </select>
+        </header>
       </div>
-    </footer>
+      <div id="mainbanner">
+        <div class="inner">
+          <div class="maintext">
+            <p class="maintitle">완벽하게 보호하고<br>자유롭게 공유하자</p>
+            <p class="subtitle">
+              문서 유출과 유실 방지, 랜섬웨어 차단.<br>체계적인 문서 관리에 효율적인 문서 공유까지!<br>필요한 모든 기능을 단 하나의 cloudiumbox로 해결.</p>
+              <a href="#" class="common-btn">무료로 시작하기</a>
+            </div>
+          </div>
+        </div>
+        <div id="container">
+          <!-- 첫번째 섹션 -->
+          <section id="first">
+            <div class="contents-wrap">
+              <div class="contents-title">
+                <h2>cloudiumbox 서비스 소개</h2>
+                <div>안전하고 사용하기 쉬운 기업용 문서중앙화 클라우드 서비스</div>
+              </div>
+              <div class="inner">
+                <div class="box img"></div>
+                <div class="box">
+                  <div class="text-box">
+                    <h3>이상적. 그러나 합리적.<br>더할 나위 없이 안전한 문서 관리 방법.</h3>
+                    <div class="subtitle">조직 내 업무 문서를 사용자 PC에는 존재하지 않도록 하고 클라우드 스토리지에만<br>
+                      암호화하여 통합 저장하기 때문에 사용자 실수로 인한 문서 유실이나 악의적인<br>
+                      유출을 사전에 예방할 수 있습니다. 무엇보다 랜섬웨어, 악성코드, 해킹 등 다양한<br>
+                      사이버 공격에서 중요 문서 자산을 안전하게 보호할 수 있답니다.</div>
+                      <a href="#" class="common-btn">cloudiumbox 활용 팁</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- 두번째 섹션 -->
+            <section id="second">
+              <div class="contents-wrap">
+                <div class="contents-title">
+                  <h2>cloudiumbox 선택해야 할 이유</h2>
+                  <div>안전한 문서 관리와 활용에 필요한 갖가지 기능들</div>
+                </div>
+                <div class="inner">
+                  <div class="left-menu">
+                    <ul>
+                      <li class="first-menu">
+                        <div><span>문서 통합 관리와<br>보안, 백업까지 동시 해결</span></div>
+                      </li>
+                      <li class="second-menu">
+                        <div><span>랜섬웨어, 사용자 실수로부터<br>회사의 중요한 문서 유실 방지</span></div>
+                      </li>
+                      <li class="third-menu">
+                        <div><span>언제 어디서나 모바일<br>근무 중에도 강력한 보안</span></div>
+                      </li>
+                      <li class="fourth-menu">
+                        <div><span>재택근무, 외근, 출장 등<br>장소를 초월한 안전한 협업</span></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="right-content">
+                    <div class="first-menu">
+                      <dl>
+                        <img src="" alt="">
+                        <div>
+                          <dt>
+                            <h3>업무 문서는 회사 자산. 개인 PC는 No Data</h3>
+                            <dd>
+                              <div>업무 중 발생하는 모든 문서는 개인PC가 아닌 cloudiumbox에 저장.<br>
+                                No Data PC로 데이터 유출, 손실의 위험 최소화</div>
+                              </dd>
+                            </dt>
+                          </div>
+                        </dl>
+                        <dl>
+                          <img src="" alt="">
+                          <div>
+                            <dt>
+                              <h3>외부 저장 매체 제어 및 유출경로 차단</h3>
+                              <dd>
+                                <div>cloudiumbox에 저장된 문서에 대한 웹 메일/ 메신저 첨부 및 USB,<br>
+                                  CD, 외장하드 등 외부 저장 매체 저장 불가, 인쇄, 캡쳐, 클립보드 등<br>
+                                  우회적인 유출 행위 차단</div>
+                                </dd>
+                              </dt>
+                            </div>
+                          </dl>
+                          <dl>
+                            <img src="" alt="">
+                            <div>
+                              <dt>
+                                <h3>관리와 운영이 간편한 관리자 기능</h3>
+                                <dd>
+                                  <div>문서 등록 및 조회현황, 접속자 현황 등 cloudiumbox를 체계적으로<br>
+                                    모니터링할 수 있는 다양한 관리기능과 각종 접근 권한, 보안 설정 제공</div>
+                                  </dd>
+                                </dt>
+                              </div>
+                            </dl>
+                          </div>
+                          <div class="second-menu">
+                            <dl>
+                              <img src="" alt="">
+                              <div>
+                                <dt>
+                                  <h3>알려진, 알려지지 않은 랜섬웨어 근본적 대책</h3>
+                                  <dd>
+                                    <div>사전 등록된 프로세스만 접근가능한 White List 방식을 사용하고,<br>
+                                      cloudiumbox 스토리지 내 수정을 허용하지 않아 랜섬웨어 같은<br>
+                                      외부 공격을 완벽하게 방어</div>
+                                    </dd>
+                                  </dt>
+                                </div>
+                              </dl>
+                              <dl>
+                                <img src="" alt="">
+                                <div>
+                                  <dt>
+                                    <h3>규정위반도 빠르게 찾아내는 이력관리</h3>
+                                    <dd>
+                                      <div>등록부터 수정, 조회, 공유 등 모든 이력이 자동으로 기록.<br>
+                                        전 직원의 문서 공동 활용도 안심하고 가능</div>
+                                      </dd>
+                                    </dt>
+                                  </div>
+                                </dl>
+                                <dl>
+                                  <img src="" alt="">
+                                  <div>
+                                    <dt>
+                                      <h3>실수도 쉽게 만회하는 버전 관리</h3>
+                                      <dd>
+                                        <div>문서가 수정될 때마다 자동으로 남는 버전.<br>
+                                          덮어쓰기로 사라진 문서도 IT 부서 도움 없이 이전 버전으로 간편하게 복구</div>
+                                        </dd>
+                                      </dt>
+                                    </div>
+                                  </dl>
+                                </div>
+                                <div class="third-menu">
+                                  <dl>
+                                    <img src="" alt="">
+                                    <div>
+                                      <dt>
+                                        <h3>어디서나 안전한 모바일 접속</h3>
+                                        <dd>
+                                          <div>사무실에 있든 이동 중이든 장소, 시간 걱정 없이 스마트폰,<br>
+                                            태블릿PC로 파일 조회 가능, 모바일 접근권한 설정 관리로 권한 없는<br>
+                                            문서와 폴더 조회 불가</div>
+                                          </dd>
+                                        </dt>
+                                      </div>
+                                    </dl>
+                                    <dl>
+                                      <img src="" alt="">
+                                      <div>
+                                        <dt>
+                                          <h3>폴더 뿐 아닌 파일 단위까지 접근권한설정</h3>
+                                          <dd>
+                                            <div>사용자, 부서, 직급별로 6단계 폴더, 문서의 액세스 권한 설정 기능을 제공.<br>
+                                              외부 반출, 모바일 파일 다운로드는 승인 프로세스를 통해서 가능</div>
+                                            </dd>
+                                          </dt>
+                                        </div>
+                                      </dl>
+                                      <dl>
+                                        <img src="" alt="">
+                                        <div>
+                                          <dt>
+                                            <h3>모든 파일을 안전하게 보관</h3>
+                                            <dd>
+                                              <div>휴대폰 또는 태블릿에 문제가 발생해도 모든 파일은 cloudiumbox에<br>
+                                                안전하게 보관되어 있어 바로 업무 진행 가능</div>
+                                              </dd>
+                                            </dt>
+                                          </div>
+                                        </dl>
+                                      </div>
+                                      <div class="fourth-menu">
+                                        <dl>
+                                          <img src="" alt="">
+                                          <div>
+                                            <dt>
+                                              <h3>안전하지만 손쉬운 협업. 파일 URL 링크 공유</h3>
+                                              <dd>
+                                                <div>URL 링크로 공유 할 메일 서버의 부하 및 용량의 낭비없이 대용량 파일을 쉽게<br>
+                                                  전송. 사내와 사외의 URL 링크를 구분, 사외 전송은 기간 및 횟수 제어,<br>
+                                                  비밀번호로 보호</div>
+                                                </dd>
+                                              </dt>
+                                            </div>
+                                          </dl>
+                                          <dl>
+                                            <img src="" alt="">
+                                            <div>
+                                              <dt>
+                                                <h3>공유 폴더로 간편한 문서 협업</h3>
+                                                <dd>
+                                                  <div>회사소개서, 제품소개서 등 보안레벨이 낮은 문서를 편리하게<br>
+                                                    공유하기 위한 기능. 공개 폴더 내 파일 업로드는 권한이 있는 특정 사용자만<br>
+                                                    가능</div>
+                                                  </dd>
+                                                </dt>
+                                              </div>
+                                            </dl>
+                                            <dl>
+                                              <img src="" alt="">
+                                              <div>
+                                                <dt>
+                                                  <h3>업무 문서로 소통하는 협업</h3>
+                                                  <dd>
+                                                    <div>파일에 중요한 설명이 있으면 댓글을 달아 안내하고 협업자들의 피드백도<br>
+                                                      빠르게 수집. 파일에 대한 소통은 물론 문서가 완성되는 과정까지 한눈에 쏙</div>
+                                                    </dd>
+                                                  </dt>
+                                                </div>
+                                              </dl>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </section>
+                                    <!-- 세번째 섹션 -->
+                                    <section id="third">
+                                      <div class="contents-wrap">
+                                        <div class="contents-title">
+                                          <h2>cloudiumbox와 함께한 가치 있는 경험</h2>
+                                          <a href="#">모든 고객 사례보기</a>
+                                        </div>
+                                        <div class="inner">
+                                          <div class="left-review">
+                                            <ul>
+                                              <li class="first-review">
+                                                <div>
+                                                  <span>국내는 물론 해외 사업장과도 안전하게 업무 할 수 있죠.</span>
+                                                  <p>아무래도 물리적인 거리가 멀어지면 파일 모니터링이 어렵기 때문에 주요 문서가<br>
+                                                    유실되거나 유출될 위험이 높은 것이 사실입니다. 하지만 cloudiumbox는 국내외<br>
+                                                    어디서든 동일한 보안 정책이 적용되고 문서 등록/수정/삭제 등 주요 이벤트에 대한 상세한<br>
+                                                    이력관리가 가능해 물리적인 거리와 관계없이 체계적인 파일 관리가 가능합니다.</p>
+                                                    <p>카메라 모듈 전문 업체 M사</p>
+                                                  </div>
+                                                </li>
+                                                <li class="second-review">
+                                                  <div>
+                                                    <span>전국 35개 지점 간 자료를 하나로 연결.<br>전사 자료 관리 단일화로 활발한 문서 공유 가능.</span>
+                                                    <p>전국 지점 간의 문서 공유가 체계적으로 관리되기 어려웟고, 외부로 유출 우려도 있었죠.<br>
+                                                      문서중앙화 도입으로 폴더 위치만 알면 문서를 자유롭게 공유할 수 있고 이력도<br>
+                                                      자동으로 남으니까 유출 고민도 덜었어요.<br>
+                                                      <p>유통 전문 기업 L사</p>
+                                                    </div>
+                                                  </li>
+                                                  <li class="third-review">
+                                                    <div>
+                                                      <span>프로젝트 기간 동안 외주 업체에 대한<br>문서 유실·유출 완벽 방지.</span>
+                                                      <p>2년 간의 프로젝트로 단기적으로 문서중앙화를 사용하기에 클라우드<br>
+                                                        서비스형이 탁월했습니다. 또한 외주 업체 직원들과 업무를 같이 진행하기 때문에<br>
+                                                        문서를 공유하거나, 유출, 유실을 방지할 완벽한 솔루션이 필요했죠.<br>
+                                                        <p>건설 전문 업체 H사</p>
+                                                      </div>
+                                                    </li>
+                                                    <li class="fourth-review">
+                                                      <div>
+                                                        <span>비용부담은 덜고 노하우 유실, 유출 완벽 방지</span>
+                                                        <p>저희 같이 소규모 긱업에서는 높은 구축 비용은 부담입니다.월 비용만 내고 임대하는<br>
+                                                          방식이 저희에게 적합했죠. 유출에 민감한 스프링 설계 자료 등을 cloudiumbox를<br>
+                                                          통해서만 확인하고, 일일이 관리하지 않아도 권한에 따라 접근이 불가하니까 빈번한<br>
+                                                          입/퇴사에도 안심할 수 있어요. 소규모 기업에 딱! 맞춤형 문서중앙화 서비스입니다.</p>
+                                                          <p>자동차 부품 전문 제조 S사</p>
+                                                        </div>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                  <div class="right-img">
+                                                    <div class="first-img"></div>
+                                                    <div class="second-img"></div>
+                                                    <div class="third-img"></div>
+                                                    <div class="fourth-img"></div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="thumb-img-wrap">
+                                                <button><img src="" alt=""></button>
+                                                <div>
+                                                  <ul>
+                                                    <li><img src="./img/section_2/img01.png" alt="img01"></li>
+                                                    <li><img src="./img/section_2/img02.png" alt="img02"></li>
+                                                    <li><img src="./img/section_2/img03.png" alt="img03"></li>
+                                                    <li><img src="./img/section_2/img04.png" alt="img04"></li>
+                                                    <li><img src="./img/section_2/img05.png" alt="img05"></li>
+                                                    <li><img src="./img/section_2/img06.png" alt="img06"></li>
+                                                    <li><img src="./img/section_2/img07.png" alt="img07"></li>
+                                                    <li><img src="./img/section_2/img08.png" alt="img08"></li>
+                                                    <li><img src="./img/section_2/img09.png" alt="img09"></li>
+                                                    <li><img src="./img/section_2/img10.png" alt="img10"></li>
+                                                    <li><img src="./img/section_2/img11.png" alt="img11"></li>
+                                                    <li><img src="./img/section_2/img12.png" alt="img12"></li>
+                                                    <li><img src="./img/section_2/img13.png" alt="img13"></li>
+                                                    <li><img src="./img/section_2/img14.png" alt="img14"></li>
+                                                    <li><img src="./img/section_2/img15.png" alt="img15"></li>
+                                                    <li><img src="./img/section_2/img16.png" alt="img16"></li>
+                                                    <li><img src="./img/section_2/img17.png" alt="img17"></li>
+                                                  </ul>
+                                                </div>
+                                                <button><img src="" alt=""></button>
+                                              </div>
+                                            </div>
+                                          </section>
+                                          <!-- 네번째 섹션 -->
+                                          <section id="fourth">
+                                            <div class="contents-wrap">
+                                              <div class="contents-title">
+                                                <div>합리적인 비용 부담없는 선택</div>
+                                                <h2>cloudiumbox 요금 안내</h2>
+                                                <p>cloudiumbox는 합리적인 가격으로 스토리지, 보안, 공유 및 협업 문제를 해결합니다.<br>
+                                                  30일 동안 무료로 체험해 보시고 기업 내 문서관련 업무가 안전하고 효율적으로 변화되는 것을 확인해 보십시오.</p>
+                                                </div>
+                                                <div class="inner">
+                                                  <ul class="box-wrap">
+                                                    <li>
+                                                      <div class="items">
+                                                        <p>무료체험</p>
+                                                        <div>0<span>원</span></div>
+                                                        <p>사용자 5명<br>5GB의 체험하기 충분한 저장 공간</p>
+                                                        <a href="#">30일간 무료체험 해보기</a>
+                                                      </div>
+                                                    </li>
+                                                    <li>
+                                                      <div class="items">
+                                                        <p>Business</p>
+                                                        <div>20<span>만원/월</span></div>
+                                                        <p>사용자 10명<br>100GB의 안전한 저장 공간</p>
+                                                        <a href="#">지금 구매하기</a>
+                                                      </div>
+                                                    </li>
+                                                    <li>
+                                                      <div class="items">
+                                                        <p>Enterprise</p>
+                                                        <div>요금 문의</div>
+                                                        <p>문서관리 현황 진단부터 프로세스<br>수립, 시스템 구축, 사후관리까지<br>고객사 맞춤형 문서중앙화 솔루션 제공</p>
+                                                        <a href="#">견적서 신청하기</a>
+                                                      </div>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </section>
+                                            <!-- 다섯번째 섹션 -->
+                                            <section>
+                                              <div class="inner">
+                                                <div class="box img"></div>
+                                                <div class="box">
+                                                  <div class="text-box">
+                                                    <div>안전하고 사용하기 쉬운</div>
+                                                    <div>기업용 문서중앙화 클라우드 서비스</div>
+                                                    <a href="#" class="common-btn">30일 무료로 사용해보기</a>
+                                                    <a href="#" class="common-btn">지금 구매</a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </section>
+                                          </div>
+                                          <footer id="footer">
+                                            <div class="f-top">
+                                              <div class="f-box top left">
+                                                <img src="./img/footer_logo.png" alt="로고">
+                                                <div class="footer-address">
+                                                  <p>상호명 : 주식회사사이버다임</p>
+                                                  <p>대표이사 : 김경채</p>
+                                                  <p>주소 : 서울 송파구올림픽로 299 12층</p>
+                                                  <p>사업자등록번호 : 211-88-52348</p>
+                                                  <p>통신판매업신고번호 : 000-000</p>
+                                                  <p>문의처 : 02-546-6990</p>
+                                                </div>
+                                                <div class="footer-icon">
+                                                  <a href="#"><img src="" alt=""></a>
+                                                  <a href="#"><img src="" alt=""></a>
+                                                  <a href="#"><img src="" alt=""></a>
+                                                </div>
+                                              </div>
+                                              <div class="f-box top right">
+                                                <ul>
+                                                  <li>
+                                                    <a href="#">서비스소개</a>
+                                                    <ul>
+                                                      <li><a href="#">Why cloudiumbox</a></li>
+                                                      <li><a href="#">고객사례</a></li>
+                                                    </ul>
+                                                  </li>
+                                                  <li>
+                                                    <a href="#">주요기능</a>
+                                                    <ul>
+                                                      <li><a href="#">문서 유출 차단</a></li>
+                                                      <li><a href="#">문서 유실 방지</a></li>
+                                                      <li><a href="#">랜섬웨어 대응</a></li>
+                                                      <li><a href="#">문서 통합 관리</a></li>
+                                                      <li><a href="#">공유와 협업</a></li>
+                                                      <li><a href="#">재택 근무 활용</a></li>
+                                                      <li><a href="#">클라우드 보안</a></li>
+                                                      <li><a href="#">편리한 관리</a></li>
+                                                    </ul>
+                                                  </li>
+                                                  <li><a href="#">요금</a></li>
+                                                  <li><a href="#">비교</a></li>
+                                                  <li>
+                                                    <a href="#">지원</a>
+                                                    <ul>
+                                                      <li><a href="#">공지사항</a></li>
+                                                      <li><a href="#">기술지원</a></li>
+                                                      <li><a href="#">자주묻는질문</a></li>
+                                                    </ul>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                            <div class="f-bottom">
+                                              <div class="f-box bottom left">
+                                                <div class="copyright">Copyright&nbsp;&copy;&nbsp;CYBERDIGM<br>All right reserved</div>
+                                              </div>
+                                              <div class="f-box bottom right">
+                                                <a href="#">개인정보처리방침</a>
+                                                <a href="#">이용약관</a>
+                                                <!-- <select name="familysite" id="familysite">
+                                                  <option value="default" selected disabled hidden>한국어</option>
+                                                  <option value="daum">English</option>
+                                                  <option value="naver">日本語</option>
+                                                </select> -->
+                                              </div>
+                                            </div>
+                                          </footer>
+    </div>
   </body>
 </html>
