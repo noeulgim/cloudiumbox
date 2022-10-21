@@ -1,4 +1,17 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Godo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+}
+@font-face {
+  font-family: 'Godo';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff');
+}
+
 html,body { height: 100% }
 body {
   font-family: 'Noto Sans KR', sans-serif;
@@ -37,10 +50,12 @@ h1,h2,h3,h4,h5,h6 { line-height: 1; }
 #logo {
   float: left;
   padding: 34px 0 0;
+  box-sizing: border-box;
 }
 
 #logo a img {
   height: 46px;
+  margin-left: 30px;
 }
 
 .inner {
@@ -88,26 +103,21 @@ h1,h2,h3,h4,h5,h6 { line-height: 1; }
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
-  background-color: #f4f4f4;
+  top: 110px;
 }
 
 #mainbanner .inner{
   position: relative;
   width: 1320px;
-  height: 100vh;
+  height: 770px;
   margin: 0 auto;
-  /* background: red; */
+  border-bottom: 1px solid #ebebeb;
 }
 
 /* 메인 배너 텍스트  */
 #mainbanner .maintext {
-  /* position: absolute;
-  width: 100%;
-  min-height: 254px;
-  top: 50%;
-  transform: translateY(-50%); */ /*가운데로 정렬할때 사용 (+padding-top 빼야함)*/
-  padding-top: 268px;
-  text-align: center;
+  padding: 0 30px;
+  /* text-align: center; */
 }
 
 /* 메인배너 메인타이틀 */
@@ -116,7 +126,21 @@ h1,h2,h3,h4,h5,h6 { line-height: 1; }
   color: #333;
 }
 
-#mainbanner .maintext p.maintitle { line-height: 60px; }
+#mainbanner .maintext p.maintitle {
+  font-family: 'Godo', sans-serif;
+  font-weight: 400;
+  font-size: 74px;
+  letter-spacing: -3px;
+  line-height: 1.133;
+}
+
+#mainbanner .maintext p.maintitle:first-child {
+  color: #2e79eb;
+}
+
+#mainbanner .maintext p.maintitle:last-child {
+  color: #111b35;
+}
 
 #mainbanner .maintext p.subtitle {
   margin-top: 30px;
